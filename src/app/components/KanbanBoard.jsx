@@ -261,7 +261,7 @@ export default function KanbanBoard() {
               }`}
             >
               <Github size={14} />
-              <span>View Code</span>
+              <a href="https://github.com/Bibhanshu16/flowboard">View Code</a>
             </button>
           </div>
         </div>
