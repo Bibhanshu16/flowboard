@@ -254,6 +254,12 @@ export default function KanbanBoard() {
 
             <button
               type="button"
+              onClick={() =>
+                window.open(
+                  "https://github.com/Bibhanshu16/flowboard",
+                  "_blank"
+                )
+              }
               className={`hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
                 darkMode
                   ? "border-slate-700 bg-slate-900 hover:bg-slate-800 text-slate-100"
@@ -261,7 +267,7 @@ export default function KanbanBoard() {
               }`}
             >
               <Github size={14} />
-              <a href="https://github.com/Bibhanshu16/flowboard">View Code</a>
+              <span>View Code</span>
             </button>
           </div>
         </div>
