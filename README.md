@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+FlowBoard – Kanban Task Management App
 
-## Getting Started
+A modern, responsive, drag-and-drop Kanban board built with Next.js, React, and Tailwind CSS.
+Designed for intuitive task planning, prioritization, and workflow management.
 
-First, run the development server:
+Live Demo → https://flowboard-pink.vercel.app/
+GitHub Repo → https://github.com/Bibhanshu16/flowboard
 
-```bash
+🚀 Features
+
+🎯 Core Functionality
+
+- Fully responsive Kanban board with three predefined columns: To Do, In Progress, Done
+- Add, edit, and delete tasks
+- Drag & drop tasks across columns
+- Task progression button (To Do → In Progress → Done)
+- Task priorities (High, Medium, Low)
+- Search & filtering by task title
+- Column-level task count
+- Clean empty states for better UX
+- Local persistence using localStorage
+- Tasks remain after refresh
+- Preloaded sample tasks for better first-time experience
+
+🌓 Dark Mode with Persistence
+
+- Fully styled light & dark themes
+- Theme is stored in localStorage and restored on page load
+- Smooth UI transitions for modern feel
+
+✨ UI & UX Highlights
+
+- Modern layout inspired by top-performing productivity apps
+- Rounded edges, soft shadows, and smooth interaction states
+- Animated drag feedback
+- Subtle gradients, elevation, and card polish
+- Mobile-friendly floating button (Add Task)
+- All typography and spacing optimized with Tailwind
+
+🛠️ Tech Stack
+
+Frontend - Next.js 15+ (App Router), React, Tailwind CSS, Lucide Icons, CSS Grid & Flexbox.
+Data Storage - localStorage.
+
+📁 Project Structure
+src/
+├── app/
+│   ├── page.js               # Main entry page
+│   └── layout.js             # Root layout
+├── components/
+│   ├── KanbanBoard.jsx       # Main board container
+│   ├── Column.jsx            # Individual column component
+│   ├── TaskCard.jsx          # Task UI + quick actions
+│   └── TaskFormModal.jsx     # Add/Edit task modal
+├── constants/
+│   └── index.js              # Column definitions + sample data
+└── styles/
+    └── globals.css           # Tailwind global styles
+
+⚙️ Setup Instructions
+
+Follow these steps to run the project locally:
+
+1. Clone the repository
+git clone <your-repo-link>
+cd <project-folder>
+
+2. Install dependencies
+npm install
+
+3. Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open in browser
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🧠 AI Tools Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+I used the following AI tools during development:
 
-## Learn More
+ChatGPT
+- Component structuring and UI improvement ideas
+- Debugging hydration mismatch issues in Next.js
+- Tailwind UI design polish
+- Code refactoring suggestions
+- README generation
+- Additional Notes
 
-To learn more about Next.js, take a look at the following resources:
+All generated code was understood, reviewed, and manually integrated.
+Architectural decisions (state management, persistence strategy, UI layout) were made intentionally.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🧪 Known Limitations
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+These were intentionally left out due to time constraints:
+- No backend database (localStorage only)
+- No task detail sidebar
+- Drag-and-drop library is custom (not using dnd-kit)
+- No multi-board support
 
-## Deploy on Vercel
+I can implement any of these if needed.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📹 Walkthrough Video
+https://www.loom.com/share/2e34bf6a89324c4eaac8fa9df0b0f836
